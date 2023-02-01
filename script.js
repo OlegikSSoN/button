@@ -1,8 +1,10 @@
 const parentBlock = document.getElementsByClassName("parent-block");
 
 for (const element of parentBlock) {
-  const innerBtn = document.createElement("button");
-  innerBtn.className = "inner-block";
-  innerBtn.innerText = "Push me";
-  element.appendChild(innerBtn);
+  const btn = document.createElement("button");
+  btn.innerText = "Save";
+  btn.style.width = "80%";
+  btn.style.padding = "2px";
+  btn.style.margin = "20px";
+  element.appendChild(btn);
 }
